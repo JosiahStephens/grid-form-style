@@ -547,7 +547,7 @@ input[type="radio"]:checked::after {
 }
 
 fieldset {
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: none;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -686,6 +686,23 @@ aside article {
 @media (min-width: 501px) {
   .center-on-mobile {
     justify-content: flex-start;
+  }
+
+  form {
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+
+  .form-panel h1 {
+    text-align: center;
+  }
+
+  fieldset {
+    grid-column: span 2;
+  }
+
+  .form-panel {
+    max-width: 54rem;
   }
 
   header .menu-icon {
