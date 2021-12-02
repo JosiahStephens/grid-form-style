@@ -298,6 +298,7 @@ article {
   padding: 0 1rem;
   padding-top: 2rem;
   max-width: 70rem;
+  padding-bottom: 1rem;
 }
 
 article:first-child {
@@ -354,6 +355,10 @@ section {
   font-size: 14px;
   padding: 1rem 2rem 1.2rem;
   margin-top: 2rem;
+}
+
+button {
+  font-weight: bold;
 }
 
 .scroll-down {
@@ -738,6 +743,11 @@ aside article {
     gap: 2rem;
   }
 
+  .form-panel {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .panel h2 {
     margin: 0;
     padding-top: 0rem;
@@ -775,9 +785,6 @@ aside article {
 
   .card .overlay p {
     font-size: 2rem;
-  }
-  .form-panel .image-wrap {
-    align-self: flex-start;
   }
 }
 
