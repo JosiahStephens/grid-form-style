@@ -606,14 +606,14 @@ button {
   right: 0;
   bottom: 0;
   background-color: var(--overlay);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 400ms ease;
 }
 
 .card .overlay p {
   /* margin-left: 1rem;
     margin-top: 1em; */
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 3rem;
   color: var(--wild-sand);
 }
@@ -781,6 +781,14 @@ aside article {
 
   .cards .card {
     flex: 1 1 45%;
+  }
+
+  .card .overlay p {
+    font-size: 2rem;
+  }
+
+  .card .overlay {
+    opacity: 0;
   }
 
   .card .overlay p {
