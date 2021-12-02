@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <meta name="description" content="information about dharks">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="main-menu">
+    <div class="menu-icon">
+      <svg viewbox="0 0 60 60">
+        <line x1="5px" y1="30px" x2="55px" y2="30px" />
+        <line x1="5px" y1="30px" x2="55px" y2="30px" />
+        <line x1="15px" y1="30px" x2="45px" y2="30px" />
+        <line x1="15px" y1="30px" x2="45px" y2="30px" />
+        <line x1="5px" y1="30px" x2="55px" y2="30px" />
+      </svg>
+    </div>
+    <nav>
+      <h2 class="hidden">Main Menu</h2>
+      <ul>
+        <li class="grow"><a href="../">Home</a></li>
+        <li><a class="dead-link">Form</a></li>
+        <li class="grow"><a href="../about/">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="panel form-panel">
+      <div class="text-wrap no-padding">
+        <h1>Form</h1>
+        <form>
+          <label for="name">Full name:</label>
+          <input type="text" name="name" id="name">
+
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="SSN">Social Security Number:</label>
+          <input type="password" name="SSN" id="SSN">
+
+          <label for="maiden-name">What is your mother's maiden name?</label>
+          <input type="text" name="maiden-name" id="maiden-name">
+
+          <label for="pet-name">What is the name of a childhood pet?</label>
+          <input type="text" name="pet-name" id="pet-name">
+
+          <label for="other">Any other security answers we need to verify your bank account:</label>
+          <input type="text" name="other" id="other">
+
+          <fieldset>
+            <legend>Which of the following would you be willing to do to support the dharks? (Check all that apply)
+            </legend>
+
+            <input type="checkbox" id="advertise" name="support" value="advertsie">
+            <label for="advertise">Tell all of my friends about them.</label>
+
+            <input type="checkbox" id="proselyte" name="support" value="proselyte">
+            <label for="proselyte">Get two people to support dharks. Then they'll each get two people to support
+              dharks. After that all of those people will each get two more people...</label>
+
+            <input type="checkbox" id="volunteer" name="support" value="volunteer">
+            <label for="volunteer">Volunteer at the local dhark shelter.</label>
+
+            <input type="checkbox" id="rally" name="ingredients" value="rally">
+            <label for="rally">Attend a dhark rally.</label>
+
+            <input type="checkbox" id="mission" name="support" value="mission">
+            <label for="mission">Go on a two-year service mission to preach about dharks.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How much are you willing to donate to the dhark cause?</legend>
+
+            <input type="radio" name="monies" id="ten" value="ten">
+            <label for="ten">$10.00</label>
+
+            <input type="radio" name="monies" id="hundred" value="hundred">
+            <label for="hundred">$100.00</label>
+
+            <input type="radio" name="monies" id="thousand" value="thousand">
+            <label for="thousand">$1,000.00</label>
+
+            <input type="radio" name="monies" id="million" value="million">
+            <label for="million">$1,000,000.00</label>
+          </fieldset>
+
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" rows="10" placeholder="Anything else you would like to say?">
+          </textarea>
+          <div class="center-on-mobile">
+            <button type="submit" class="button">Submit Now</button>
+          </div>
+        </form>
+      </div>
+      <div class="image-wrap shark-svg">
+        <img src="../images/shark-fin.svg" alt="shark fin">
+      </div>
+      <div class="image-wrap hidden">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>
