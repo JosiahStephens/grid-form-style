@@ -470,6 +470,16 @@ form {
   flex: 70%;
 }
 
+input {
+  color: var(--scorpion);
+  border: none;
+}
+
+textarea {
+  color: var(--scorpion);
+  border: none;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   appearance: none;
@@ -703,6 +713,34 @@ aside article {
 
   .form-panel {
     max-width: 54rem;
+  }
+
+  input {
+    background-color: var(--wild-sand);
+    transition: background-color 300ms;
+  }
+
+  input:hover {
+    background-color: lightgray;
+  }
+
+  input:focus {
+    outline: var(--au-chico) solid 1px;
+    background-color: var(--wild-sand);
+  }
+
+  textarea {
+    background-color: var(--wild-sand);
+    transition: background-color 300ms;
+  }
+
+  textarea:hover {
+    background-color: lightgray;
+  }
+
+  textarea:focus {
+    outline: var(--au-chico) solid 1px;
+    background-color: var(--wild-sand);
   }
 
   header .menu-icon {
